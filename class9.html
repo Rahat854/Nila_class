@@ -6,7 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML TABLE</title>
 </head>
+<style>
+    table {
+        text-align: center;
+    }
+    th {
+        border: solid black 1px;
+    }
+    td {
+        border: solid black 1px;
+    }
+</style>
 <body>
     <h1 style="text-align: center;">HTML TABLE</h1>
+    <caption>Results</caption>
+    <table>
+        <colgroup>
+            <col  style="background-color: red;">
+            <col span="2" style="background-color:blue;">
+        </colgroup>
+        <thead>
+            <tr> <!--table row-->
+                <th>Roll-No.</th> <!--table header-->
+                <th>Name</th>
+                <th>Batch-No.</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td><!--table data-->
+                <td>Rahat</td>
+                <td>53</td>
+                <td>3.73</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Nila</td>
+                <td>53</td>
+                <td>3.41</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Average</td>
+                <td>3.52</td>
+            </tr>
+        </tfoot>
+    </table>
 </body>
 </html>
