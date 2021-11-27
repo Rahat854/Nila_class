@@ -1,11 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 .header {
     width: 100%;
-    background-color: palevioletred;
+    background-color: lightseagreen;
     display: flex;
     padding: 20px;
     justify-content: space-between;
@@ -38,7 +39,7 @@
 }
 .header .profile .profile-button i{
     color: white;
-    background-color: palevioletred;
+    background-color: lightseagreen;
     height: 24px;
     width: 24px;
     border-radius: 50%;
@@ -47,7 +48,7 @@
     justify-content: center;
 }
 .header .profile .profile-button .header-content {
-    color: palevioletred;
+    color: lightseagreen;
     font-weight: bolder;
     display: inline-block;
 }
@@ -57,4 +58,51 @@
     color: white;
     display: flex;
     gap: 8px;
+}
+
+.body,
+.myBkash-section,
+.suggestion-section {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 20px;
+    padding: 8px;
+    background-color: aliceblue;
+}
+.body .body-items,
+.myBkash-items,
+.suggestion-items {
+    text-align: center;
+}
+
+.body .body-items i,
+.myBkash-items i ,
+.suggestion-items i{
+    font-size: xx-large;
+    font-weight: lighter;
+    margin-bottom: 12px;
+}
+.body .body-items .body-content,
+.myBkash-items .myBkash-content ,
+.suggestion-items .suggestion-content{
+    color: gray;
+}
+
+.myBkash .header-section,
+.suggestion-header-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+}
+
+.myBkash .header-section .myBkash-header,
+.suggestion-header-section .suggestion-header {
+    font-size: large;
+    color: gray;
+    font-weight: bold;
+}
+.myBkash .header-section i,
+.suggestion-header-section i{
+    font-size: x-large;
+    color: gray;
 }
